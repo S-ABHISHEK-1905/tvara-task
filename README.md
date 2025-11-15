@@ -1,6 +1,6 @@
 # TVARA TASKS INTERVIEW ROUND 2
 
-<p align="center"> <h2>TASK - 1</h2> </p>
+## TASK - 1
 
 ### SUMMARY
  
