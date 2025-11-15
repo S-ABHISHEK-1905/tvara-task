@@ -4,7 +4,7 @@ from langchain_community.vectorstores import FAISS
 
 
 
-source = "./task2_data.pdf"  # document per local path or URL
+source = "./task2_data.pdf"  
 converter = DocumentConverter()
 result = converter.convert(source)
 text=result.document.export_to_markdown()
