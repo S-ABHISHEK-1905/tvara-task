@@ -88,7 +88,24 @@ Real OpenAI GPT-5-Nano API
 
 ## TASK - 3
 
-### SUMMARY
+## Repository Structure
+```
+TVARA-TASK/
+│
+├── src/
+│   └── moderation/ 
+│       └──moderation.py        
+│   ├── llm/
+│       └──nano.py                
+│   └── utils/
+│       ├──retry.py
+│       └──pdfl.py             
+│
+├── task1.py                
+├── task2.py                
+└── README.md
+```
+
 ## Branching Workflow
 
 - main → Final, production-ready code only.
