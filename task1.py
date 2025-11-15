@@ -27,5 +27,5 @@ def pipeline(pdf_path):
 
 
 if __name__ == "__main__":
-    result = pipeline("task2_data.pdf")
+    result = pipeline("task1_data.pdf")
     print(json.dumps(result, indent=2))
