@@ -1,6 +1,6 @@
 # TVARA TASKS INTERVIEW ROUND 2
 
-<center> **TASK - 1**
+<p align="center"> ## TASK - 1
 
 ### SUMMARY
  
