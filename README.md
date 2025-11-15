@@ -60,8 +60,7 @@ def generate(self, text: str, api_key: str):
 
 ### SUMMARY
  
- This task implements a minimal Retrieval-Augmented Generation (RAG) pipeline.It reads text from a PDF, splits it into overlapping chunks, embeds the chunks using a Hugging Face embedding model, and stores them in a FAISS vector store. A query can then retrieve the top-k most relevant chunks along with similarity scores.The pipeline is modular and ready for integration with downstream LLMs.This task implements a minimal GPT-5-Nano + Moderation pipeline. It reads text from a PDF, checks it using a mock moderation module, and if allowed, generates a mock GPT-5-Nano response. A retry-based robustness feature ensures reliability.The code is modular and ready for real OpenAI API integration.
-
+ This task implements a minimal Retrieval-Augmented Generation (RAG) pipeline. It reads text from a PDF, splits the text into overlapping chunks, embeds each chunk using a Hugging Face embedding model (intfloat/e5-small-v2), and stores the embeddings in a FAISS vector store. A user query can then retrieve the top-k most relevant chunks along with their similarity scores. The pipeline is modular and ready for integration with downstream LLMs for generating answers based on retrieved content.
 
 ## How to Run
 
