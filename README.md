@@ -77,7 +77,8 @@ python task2.py
 
 3. Expected output:
 
-![](task2.png)
+
+!()[./task2.png]
 
 ## What’s Missing Due to Time
 
