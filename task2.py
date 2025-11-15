@@ -1,5 +1,4 @@
 from docling.document_converter import DocumentConverter
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
@@ -12,14 +11,17 @@ text=result.document.export_to_markdown()
 
 chunks = []
 
-#We use a chunk size of 300 because the pdf contains statements of short facts about Langchain and Rag
+# Used a chunk size of 200 because the pdf contains statements of short facts about Langchain and Rag
+chunk_size = 200
+overlap = 50
 
-if text:
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=300,        
-        chunk_overlap=50       
-    )
-    chunks = splitter.split_text(text)
+start = 0
+while start < len(text):
+    end = start + chunk_size
+    chunk = text[start:end].strip()
+    if chunk:
+        chunks.append(chunk)
+    start = end - overlap 
 
 
 EMBEDDING_MODEL = "intfloat/e5-small-v2"
