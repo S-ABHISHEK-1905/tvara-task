@@ -91,19 +91,35 @@ Real OpenAI GPT-5-Nano API
 ## Repository Structure
 ```
 TVARA-TASK/
-│
-├── src/
-│   └── moderation/ 
-│       └──moderation.py        
-│   ├── llm/
-│       └──nano.py                
-│   └── utils/
-│       ├──retry.py
-│       └──pdfl.py             
-│
-├── task1.py                
-├── task2.py                
-└── README.md
+├─main
+│ │
+│ ├── src/
+│ │   └── moderation/ 
+│ │       └──moderation.py        
+│ │   ├── llm/
+│ │       └──nano.py                
+│ │   └── utils/
+│ │       ├──retry.py
+│ │       └──pdfl.py             
+│ │
+│ ├── task1.py                
+│ ├── task2.py                
+│ └── README.md 
+└─dev
+  │
+  ├── src/
+  │   └── moderation/ 
+  │       └──moderation.py        
+  │   ├── llm/
+  │       └──nano.py                
+  │   └── utils/
+  │       ├──retry.py
+  │       └──pdfl.py             
+  │
+  ├── task1.py                
+  ├── task2.py                
+  └── README.md 
+  
 ```
 
 ## Branching Workflow
@@ -118,9 +134,10 @@ TVARA-TASK/
 3. Open a Pull Request (PR) from `dev → main`.  
 4. Once approved, merge PR into `main`.  
 
-**Important:**  
-- Do not commit directly to `main`.  
-- Use PRs to maintain code review and stability.
+**Developed by:**  
+- S.ABHISHEK
+- abhidhanaml@gmail.com
+- +91 70104 51647
 
 
 
